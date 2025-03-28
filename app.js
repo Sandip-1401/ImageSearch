@@ -6,7 +6,7 @@ const infoImg = document.querySelector("h4");
 
 let page = 1;
 let keyword = "";
-const accessKey = import.meta.env.VITE_API_KEY;
+let accessKey = "wfkdMe6s6v-14I6dt-BnToasHTRVNYJFOOi_2july1Y";
 
 async function searchImage(){
    keyword = searchBox.value; 
@@ -24,8 +24,6 @@ async function searchImage(){
    const response = await fetch(url);
    const data = await response.json();
    console.log(data);
-   console.log("Access Key:", import.meta.env.VITE_API_KEY);
-
 
    const results = data.results;
 
