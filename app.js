@@ -24,6 +24,8 @@ async function searchImage(){
    const response = await fetch(url);
    const data = await response.json();
    console.log(data);
+   console.log("Access Key:", import.meta.env.VITE_API_KEY);
+
 
    const results = data.results;
 
